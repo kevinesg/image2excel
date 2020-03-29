@@ -1,10 +1,10 @@
 import openpyxl
 import matplotlib
 import pandas
-import PIL
 import os
 import sys
 
+from PIL import Image
 from matplotlib.image import imread
 from scipy.cluster.vq import whiten
 from scipy.cluster.vq import kmeans
@@ -12,7 +12,7 @@ from scipy.cluster.vq import kmeans
 
 # image file input
 imageFileName = sys.argv[1]
-imageFile = PIL.Image.open(imageFileName)
+imageFile = Image.open(imageFileName)
 
 width, height = imageFile.size # dimensions of the whole image
 
