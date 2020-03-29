@@ -122,3 +122,4 @@ os.remove('pixelGroup.jpg')
 dotIndex = imageFileName.index('.')
 excelFileName = sys.argv[1][:dotIndex]
 wb.save(f'{excelFileName}.xlsx')
+print(r'Excel file is complete! :)')
